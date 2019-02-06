@@ -188,7 +188,7 @@ div#team-name {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-end;
-        width: 90%;
+        width: 100%;
     }    
 }
 
