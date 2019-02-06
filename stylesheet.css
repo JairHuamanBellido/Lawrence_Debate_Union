@@ -36,14 +36,11 @@ a {
 
 #header-contents h1 {
     color: gold;
+    font-size: 4vw;
 }
 
 #header-contents > div {
     margin: 0 5px;
-}
-
-#header-contents h1 {
-    display: inline-block;
 }
 
 .stand-in-svg {
@@ -165,6 +162,7 @@ a {
     padding: 8px 0;
     text-decoration: none;
     display: block;
+    font-size: 15px;
 }
 
 .dropdown-content a:hover {
@@ -173,4 +171,19 @@ a {
 
 .dropdown-wrapper:hover .dropdown-content {
     display: block;
+}
+
+
+/*Media queries -------------------------------*/
+
+@media screen and (max-width: 500px) {
+    #card-container{
+        width: 86%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    div#header-contents h1 {
+        font-size: 28px;
+    }
 }
