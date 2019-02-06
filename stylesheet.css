@@ -43,6 +43,10 @@ a {
     margin: 0 5px;
 }
 
+div#team-name {
+    margin: auto 5px;
+}
+
 .stand-in-svg {
     display: inline-block;
 }
@@ -185,11 +189,7 @@ a {
         align-items: flex-start;
         justify-content: flex-end;
         width: 90%;
-    }
-    #header-contents > div {
-        margin: auto 0;
-    }
-    
+    }    
 }
 
 @media screen and (min-width: 700px) {
