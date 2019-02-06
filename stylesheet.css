@@ -1,5 +1,10 @@
 body {
     margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1 {
@@ -15,21 +20,18 @@ a {
     background-color: #5fb25f;
     display: flex;
     justify-content: center;
-    /* align-items: flex-end; */
     text-align: center;
     position: fixed;
-    height: 70px;
+    height: 80px;
     width: 100%;
     top: 0;
 }
 
 #header-contents {
     width: fit-content;
-    /* margin: auto; */
     color: gold;
     display: flex;
-    /* padding: 15px; */
-    height: 70px;
+    height: 100%;
     align-items: center;
 }
 
@@ -48,13 +50,17 @@ a {
     flex-direction: row;
     align-self: flex-end;
     width: fit-content;
-    /* margin: auto; */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 .nav-item {
     padding: 5px;
     border-right: 1px solid black;
-    /* align-items: flex-end; */
+}
+
+.nav-item:hover {
+    background-color: hsl(51, 94%, 48%);
 }
 
 #header-nav .nav-item:last-child {
@@ -65,25 +71,72 @@ a {
 
 #content-wrapper {
     background-color: green;
-    margin-top: 70px;
     position: relative;
     padding: 15px 0;
+    height: 100%;
+    margin-top: 80px;
+    flex-grow: 1;
+    z-index: -1;
 }
 
 #card-container {
     width: 70%;
     margin: auto;
-    /* padding-top: 36px; */
-    /* margin-top: 61px; */
     position:  relative;
 }
 
 .paragraph-block {
     background-color: white;
-    box-shadow: 1px 1px 4px 2px #767676;
-    border-radius: 4px;
+    box-shadow: 0.5px 0.5px 6px 0px #767676;
+    border-radius: 3px;
     display: flex;
     flex-direction: column;
     padding: 10px;
     margin-bottom: 25px;
 }
+
+
+
+/*Footer ------------------------------------*/
+
+#footer {
+    width: 100%;
+    background-color: grey;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#footer div a {
+    color: lightblue;
+}
+
+/*Nav bar at top*/
+
+.dropdown-wrapper {
+	position: relative;
+	display: inline-block;
+	/* z-index: 100; */
+	cursor: default;
+	}
+
+.dropdown-button {
+	display: flex;
+}
+  
+.dropdown-content {display: none;position: absolute;background-color: #fcfcfc;min-width: 120px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 4;left: -2px;/* margin: 6px 0; */}
+
+.dropdown-content a {
+color: black;
+padding: 10px 10px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown-wrapper:hover .dropdown-content {display: block;}
+
+.dropdown-content a:hover {display: block}
