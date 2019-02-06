@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#header {
+    background-color: #5fb25f;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    text-align: center;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: 0;
+}
+
+#header-contents {
+    width: fit-content;
+    /* margin: auto; */
+    color: gold;
+    display: flex;
+    /* padding: 15px; */
+    height: 70px;
+    align-items: center;
+}
+
+#header-contents h1 {
+    display: inline-block;
+}
+
+.stand-in-svg {
+    display: inline-block;
+}
+
+#header-nav {
+    background-color: hsla(51, 100%, 76%, 1);
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    width: fit-content;
+    /* margin: auto; */
+}
+
+.nav-item {
+    padding: 5px;
+    border-right: 1px solid black;
+    /* align-items: flex-end; */
+}
+
+#header-nav .nav-item:last-child {
+    border-right: 0;
+}
+
+/*Content styles listed below -----------------------------------------*/
+
+#content-wrapper {
+    background-color: green;
+    margin-top: 70px;
+    position: relative;
+    padding: 15px 0;
+}
+
+#card-container {
+    width: 70%;
+    margin: auto;
+    /* padding-top: 36px; */
+    /* margin-top: 61px; */
+    position:  relative;
+}
+
+.paragraph-block {
+    background-color: white;
+    box-shadow: 1px 1px 4px 2px #767676;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 25px;
+}
