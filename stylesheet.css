@@ -27,11 +27,12 @@ a {
 }
 
 #header-contents {
-    width: fit-content;
     color: gold;
     display: flex;
     height: 100%;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 #header-contents h1 {
@@ -202,8 +203,13 @@ div#team-name {
     }
 }
 
-/*Folding card system*/
+@media screen and (min-width: 600px) {
+    #header-contents > div {
+        margin: 0 3%;
+    }
+}
 
+/*Folding card system*/
 @media screen and (min-width: 1250px) {
     .paragraph-block {
         width: calc(50% - 40px);
