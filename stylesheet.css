@@ -164,6 +164,10 @@ div#team-name {
     border-bottom-right-radius: 9px;
 }
 
+.inner-paragraph {
+    padding: 5px;
+}
+
 .explore-button {
     border: 1.5px solid black;
     color: black;
