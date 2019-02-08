@@ -171,6 +171,7 @@ div#team-name {
     flex-direction: column;
     overflow: hidden;
     border-bottom-right-radius: 9px;
+    position: relative;
 }
 
 .inner-paragraph {
@@ -178,7 +179,7 @@ div#team-name {
 }
 
 .explore-button {
-    outline: 2px solid white;
+    /* outline: 2px solid white; */
     color: white;
     margin-left: auto;
     margin-top: auto;
@@ -187,6 +188,9 @@ div#team-name {
     transition: all .2s ease;
     font-size: 16px;
     padding: 7px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .explore-button:hover {
