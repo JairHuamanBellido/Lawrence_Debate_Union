@@ -15,6 +15,8 @@ a {
     text-decoration: none;
 }
 
+
+/*Header styles*/
 #header {
     background-color: #5fb25f;
     display: flex;
@@ -24,6 +26,7 @@ a {
     height: 80px;
     width: 100%;
     top: 0;
+    z-index: 1;
 }
 
 #header-contents {
@@ -81,78 +84,8 @@ div#team-name {
     border-right: 0;
 }
 
-.dividing-bar {
-    height: 90px;
-    background-color: green;
-}
 
-/*Content styles listed below -----------------------------------------*/
-
-#content-wrapper {
-    background-color: #cef3ff;
-    position: relative;
-    padding: 15px 0;
-    /* margin-top: 80px; */
-    flex-grow: 1;
-    z-index: -1;
-}
-
-#page-title {
-    text-align: center;
-}
-
-#card-container {
-    width: 70%;
-    margin: auto;
-    position:  relative;
-}
-
-.paragraph-block {
-    background-color: white;
-    box-shadow: 0.5px 0.5px 6px 0px #767676;
-    border-radius: 3px;
-    display: flex;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 18px;
-    min-height: 100px;
-    flex-direction: row;
-}
-
-.explore-button {
-    border: 1.5px solid black;
-    width: fit-content;
-    padding: 3px;
-    margin-left: auto;
-    margin-top: auto;
-    background-color: hsla(51, 100%, 76%, 1);
-}
-
-
-
-/*Footer ------------------------------------*/
-
-#footer {
-    width: 100%;
-    background-color: grey;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    flex-direction: column;
-}
-
-#footer div {
-    margin: 2px 0;
-}
-
-#footer div a {
-    color: lightblue;
-    text-decoration: underline;
-}
-
-/*Nav bar at top -----------------------------------------------*/
+/*Nav bar at top*/
 
 .dropdown-wrapper {
 	position: relative;
@@ -193,6 +126,87 @@ div#team-name {
     display: block;
 }
 
+.dividing-bar {
+    height: 90px;
+    background-color: green;
+}
+
+/*Content styles listed below -----------------------------------------*/
+
+#content-wrapper {
+    background-color: hsl(195, 100%, 94%);
+    position: relative;
+    padding: 15px 0;
+    flex-grow: 1;
+}
+
+#page-title {
+    text-align: center;
+}
+
+#card-container {
+    width: 70%;
+    margin: auto;
+    position:  relative;
+}
+
+.paragraph-block {
+    background-color: white;
+    box-shadow: 0.5px 0.5px 6px 0px #767676;
+    border-radius: 3px;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+    min-height: 100px;
+    flex-direction: column;
+    overflow: hidden;
+    border-bottom-right-radius: 9px;
+}
+
+.explore-button {
+    border: 1.5px solid black;
+    color: black;
+    width: fit-content;
+    padding: 7px;
+    margin-left: auto;
+    margin-top: auto;
+    background-color: hsla(51, 100%, 76%, 1);
+    border-bottom-right-radius: 9px;
+
+    /*if choosing to hide borders, use this
+    margin-right: -2px;
+    margin-bottom: -1.5px;
+    */
+}
+
+.explore-button:hover {
+    background-color: hsl(51, 94%, 48%);
+}
+
+
+
+/*Footer ------------------------------------*/
+
+#footer {
+    width: 100%;
+    background-color: grey;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+#footer div {
+    margin: 2px 0;
+}
+
+#footer div a {
+    color: lightblue;
+    text-decoration: underline;
+}
 
 /*Media queries -------------------------------*/
 
