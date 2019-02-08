@@ -5,20 +5,23 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
+    font-family: sans-serif;
 }
 
 h1 {
     margin: 0;
+    
 }
 
 a {
     text-decoration: none;
+    color: #ececec;
 }
 
 
 /*Header styles*/
 #header {
-    background-color: #5fb25f;
+    background-color: #56c58d;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -30,16 +33,17 @@ a {
 }
 
 #header-contents {
-    color: gold;
+    color: #ffffa3;
     display: flex;
     height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
 }
 
 #header-contents h1 {
-    color: gold;
+    
+    color: #ffffa3;
     font-size: 4vw;
 }
 
@@ -56,31 +60,31 @@ div#team-name {
 }
 
 #header-nav {
-    background-color: hsla(51, 100%, 76%, 1);
+    
     color: black;
     display: flex;
     flex-direction: row;
-    align-self: flex-end;
     width: fit-content;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     font-size: 17px;
 }
-
-#header-nav a {
-    color:black;
+#header-nav > div{
+    margin: 0 8px;
 }
 
 .nav-item {
-    padding: 5px;
-    border-right: 1px solid black;
+    padding: 8px 16px;
     transition: all .2s ease;
     font-size: 17px;
-}
+    color:#ececec;
+    border-radius: 100px;
 
+}
+/* 
 .nav-item:hover {
     background-color: hsl(51, 94%, 48%);
-}
+} */
 
 #header-nav .nav-item:last-child {
     border-right: 0;
@@ -96,8 +100,8 @@ div#team-name {
 	white-space: nowrap;
 }
 
-.dropdown-wrapper:hover .dropdown-button {
-    background-color: hsl(51, 94%, 48%);
+.dropdown-wrapper:hover .dropdown-button, .nav-item:hover {
+    background-color: rgba(255,255,255,.10);
 }
 
 .dropdown-button {
@@ -111,15 +115,17 @@ div#team-name {
     /* min-width: 105px; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 4;
+    
     /* padding: 2px 12px; */
 }
 
 .dropdown-content a {
-    color: black;
+    
     padding: 9px 11px;
     text-decoration: none;
     display: block;
     font-size: 15px;
+    color: #434343 !important;
 }
 
 .dropdown-content a:hover {
@@ -130,10 +136,6 @@ div#team-name {
     display: block;
 }
 
-.dividing-bar {
-    height: 90px;
-    background-color: green;
-}
 
 /*Content styles listed below -----------------------------------------*/
 
@@ -142,6 +144,7 @@ div#team-name {
     position: relative;
     padding: 15px 0;
     flex-grow: 1;
+    margin-top: 80px;
 }
 
 #page-title {
