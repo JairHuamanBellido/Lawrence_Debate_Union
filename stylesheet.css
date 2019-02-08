@@ -113,8 +113,20 @@ div#team-name {
     border-radius: 3px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    /* padding: 10px; */
     margin-bottom: 18px;
+    min-height: 100px;
+    flex-direction: row;
+}
+
+.explore-button {
+    border: 1.5px solid black;
+    width: fit-content;
+    padding: 3px;
+    display: flex;
+    /* justify-items: legacy; */
+    align-self: flex-end;
+    position: absolute;
 }
 
 
