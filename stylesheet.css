@@ -75,6 +75,7 @@ div#team-name {
     padding: 5px;
     border-right: 1px solid black;
     transition: all .2s ease;
+    font-size: 17px;
 }
 
 .nav-item:hover {
@@ -149,6 +150,7 @@ div#team-name {
 
 #card-container {
     width: 70%;
+    max-width: 1500px;
     margin: auto;
     position:  relative;
 }
@@ -183,7 +185,7 @@ div#team-name {
     justify-content: center;
     align-items: center;
     transition: all .2s ease;
-    font-size: 18px;
+    font-size: 16px;
     padding: 7px;
 }
 
