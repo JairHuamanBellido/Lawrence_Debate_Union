@@ -170,8 +170,11 @@ div#team-name {
     min-height: 100px;
     flex-direction: column;
     overflow: hidden;
-    border-bottom-right-radius: 9px;
     position: relative;
+}
+
+.para-home {
+    border-bottom-right-radius: 9px;
 }
 
 .inner-paragraph {
@@ -186,7 +189,7 @@ div#team-name {
     background-color: hsla(120, 100%, 24%, 1);
     border-bottom-right-radius: 9px;
     transition: all .2s ease;
-    font-size: 16px;
+    font-size: 18px;
     padding: 7px;
     position: absolute;
     bottom: 0;
@@ -197,6 +200,8 @@ div#team-name {
     background-color: hsl(120, 40%, 74%);
     color: black;
     outline: 3px solid hsla(120, 100%, 24%, 1);
+    font-size: 17px;
+    padding: 8px;
 }
 
 
