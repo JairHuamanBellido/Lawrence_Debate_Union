@@ -172,7 +172,6 @@ div#team-name {
     border: 1.5px solid black;
     color: black;
     width: fit-content;
-    padding: 7px;
     margin-left: auto;
     margin-top: auto;
     background-color: hsla(51, 100%, 76%, 1);
@@ -182,9 +181,17 @@ div#team-name {
     margin-right: -2px;
     margin-bottom: -1.5px;
     */
+    height: 30px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: font-size .4s ease;
+    font-size: 17px;
 }
 
 .explore-button:hover {
+    font-size: 15px;
     background-color: hsl(51, 94%, 48%);
 }
 
