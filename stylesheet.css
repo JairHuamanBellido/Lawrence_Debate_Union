@@ -112,8 +112,8 @@ div#team-name {
     box-shadow: 0.5px 0.5px 6px 0px #767676;
     border-radius: 3px;
     display: flex;
-    flex-direction: column;
-    /* padding: 10px; */
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 18px;
     min-height: 100px;
     flex-direction: row;
@@ -123,10 +123,9 @@ div#team-name {
     border: 1.5px solid black;
     width: fit-content;
     padding: 3px;
-    display: flex;
-    /* justify-items: legacy; */
-    align-self: flex-end;
-    position: absolute;
+    margin-left: auto;
+    margin-top: auto;
+    background-color: hsla(51, 100%, 76%, 1);
 }
 
 
