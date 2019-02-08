@@ -74,6 +74,7 @@ div#team-name {
 .nav-item {
     padding: 5px;
     border-right: 1px solid black;
+    transition: all .2s ease;
 }
 
 .nav-item:hover {
