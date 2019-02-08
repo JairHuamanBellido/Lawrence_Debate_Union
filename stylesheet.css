@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -18,12 +17,12 @@ a {
 
 /*Header styles*/
 #header {
-    background-color: #5fb25f;
+    background-color: hsla(120, 35%, 57%, 1);
     display: flex;
     justify-content: center;
     text-align: center;
     position: fixed;
-    height: 80px;
+    height: 90px;
     width: 100%;
     top: 0;
     z-index: 1;
@@ -131,7 +130,10 @@ div#team-name {
 }
 
 .dividing-bar {
-    height: 90px;
+    height: 10px;
+    /* position: fixed; */
+    width: 100%;
+    /* top: 0; */
     background-color: green;
 }
 
@@ -140,8 +142,9 @@ div#team-name {
 #content-wrapper {
     background-color: hsl(195, 100%, 94%);
     position: relative;
-    padding: 15px 0;
+    /* padding: 15px 0; */
     flex-grow: 1;
+    margin-top: 90px;
 }
 
 #page-title {
@@ -153,6 +156,7 @@ div#team-name {
     max-width: 1500px;
     margin: auto;
     position:  relative;
+    padding-top: 10px;
 }
 
 .paragraph-block {
