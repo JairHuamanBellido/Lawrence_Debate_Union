@@ -169,30 +169,32 @@ div#team-name {
 }
 
 .explore-button {
-    border: 1.5px solid black;
-    color: black;
+    outline: 2px solid white;
+    color: white;
     width: fit-content;
     margin-left: auto;
     margin-top: auto;
-    background-color: hsla(51, 100%, 76%, 1);
+    background-color: hsla(120, 100%, 24%, 1);
     border-bottom-right-radius: 9px;
 
     /*if choosing to hide borders, use this
     margin-right: -2px;
     margin-bottom: -1.5px;
     */
-    height: 30px;
-    width: 65px;
+    height: 35px;
+    width: 74px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: font-size .4s ease;
-    font-size: 17px;
+    transition: all .2s ease;
+    font-size: 18px;
 }
 
 .explore-button:hover {
-    font-size: 15px;
-    background-color: hsl(51, 94%, 48%);
+    font-size: 17px;
+    background-color: hsl(120, 40%, 74%);
+    color: black;
+    outline: 3px solid hsla(120, 100%, 24%, 1);
 }
 
 
